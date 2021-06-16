@@ -13,8 +13,8 @@
 <body>
 <div class="container mx-auto">
   <div class="row">
-        <h2>BekasiDev QR</h2>
     <div class="col">
+       <h2>BekasiDev QR</h2>
         <img src="https://raw.githubusercontent.com/MaksumRifai/qr-gen/main/bekasidev-qr.png">
     </div>
     </div>
@@ -22,11 +22,15 @@
         <form>
             <fieldset>
                 <legend>Create QR for your Profile</legend>
-                <label for="profile-page">Your Profile Page URL</label>
-                <input id="profile-page" type="text" class="pure-input-1" placeholder="https://bekasidev.org/member/..." required>
-                <label for="full-name">Your Full Name</label>
-                <input id="full-name" type="text" placeholder="Your Full Name" required>
-                <button class="btn btn-primary" id="generate">Generate</button>
+                <div class="form-group">
+                    <label for="profile-page">Your Profile Page URL</label>
+                    <input id="profile-page" type="text" class="form-control" placeholder="https://bekasidev.org/member/..." required>
+                </div>
+                <div class="form-group">
+                    <label for="full-name">Your Full Name</label>
+                    <input id="full-name" type="text" class="form-control" placeholder="Your Full Name" required>
+                </div>
+                <button class="btn btn-primary" id="generate" type="submit">Generate</button>
             </fieldset>
         </form>
     </div>
