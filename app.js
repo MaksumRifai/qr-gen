@@ -7,10 +7,10 @@ function manipulate() {
     var fullName = $("#full-name").val();
 
     if (profilePage && fullName > '0') {
-        var origstr = profilePage + ':' + fullName;
+        var origstr = profilePage + 'for ' + fullName + 'profile';
         var b64str = utf8_to_b64(origstr);
 
-        qrcode.makeCode('ss://' + b64str);
+        qrcode.makeCode('visit: ' + origstr);
     } else {
         alert("Please fill all blanks.");
     }
