@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QRCode Generator</title>
+    <title>QR Code Generator - Maksum Rifai</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="lib/jquery.min.js"></script>
     <script src="lib/qrcode.min.js"></script>
@@ -14,21 +14,21 @@
 <div class="container mx-auto">
   <div class="row text-center">
     <div class="col">
-       <h2>BekasiDev QR</h2>
-        <img src="https://raw.githubusercontent.com/MaksumRifai/qr-gen/main/bekasidev-qr.png">
+       <h2>QR Generator</h2>
+        <img src="https://raw.githubusercontent.com/MaksumRifai/qr-gen/main/rifai-qr.png">
     </div>
     </br>
     <div class="col">
         <form>
             <fieldset>
-                <legend>Create QR for your Profile</legend>
+                <legend>Create QR For Your Website</legend>
                 <div class="form-group">
-                    <label for="profile-page">Your Profile Page URL</label>
-                    <input id="profile-page" type="text" class="form-control" placeholder="https://bekasidev.org/member/..." required>
+                    <label for="web-url">Website URL</label>
+                    <input id="web-url" type="text" class="form-control" placeholder="https://maksumrifai.github.io" required>
                 </div>
                 <div class="form-group">
-                    <label for="full-name">Your Full Name</label>
-                    <input id="full-name" type="text" class="form-control" placeholder="Your Full Name" required>
+                    <label for="full-desc">Description</label>
+                    <input id="full-desc" type="text" class="form-control" placeholder="Maksum Rifai" required>
                 </div>
                 <button class="btn btn-primary" id="generate" type="submit">Generate</button>
             </fieldset>
@@ -38,7 +38,7 @@
    </br>
     <div class="row text-center">
         <div id="qrcode" class="col text-center">
-        <p>Save & Share Your Generated QR</p>
+        <p>Download & Share Your Generated QR</p>
         </div>
     </div>
 </div>
