@@ -3,11 +3,11 @@
 var qrcode = new QRCode("qrcode");
 
 function manipulate() {
-    var profilePage = $("#profile-page").val();
-    var fullName = $("#full-name").val();
+    var webUrl = $("#web-url").val();
+    var fullDesc = $("#full-desc").val();
 
-    if (profilePage && fullName > '0') {
-        var origstr = profilePage + ' for ' + fullName + ' Profile';
+    if (webUrl && fullDesc > '0') {
+        var origstr = webUrl + ' for ' + fullDesc;
         var b64str = utf8_to_b64(origstr);
 
         qrcode.makeCode('Visit: ' + origstr);
